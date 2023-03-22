@@ -1,47 +1,18 @@
-import React from 'react'
-import Practice from './classes/20-03-23'
+import React from 'react';
+// import './appss'.c
+import style from './app.module.css'
+import {Container,Header,Footer} from './app.styles'
+import ComponentA from './componentA'
 
-export default class App extends React.Component{
-    render(){
-      const data = [
-        {
-          name:'Nathan',
-          age:12,
-          gender:'male',
-          btn:'nathan',
-          bgColor:'green'
-        },
-        {
-          name:'Kennedy',
-          age:31,
-          gender:'female',
-          btn:'kennedy',
-          bgColor:'red'
-        },
-        {
-          name:'Peter',
-          age:91,
-          gender:'male',
-          btn:'peter',
-          bgColor:'blue'
-        },
-        {
-          name:'Emma',
-          age:44,
-          gender:'female',
-          btn:'emma',
-          bgColor:'orange'
-        },
-      ]
 
-       return(
-        <div className='flex flex-wrap gap-4 items-center mt-2'>
-          <Practice user={data[0]}/>
-          <Practice user={data[1]}/>
-          <Practice user={data[2]}/>
-          <Practice user={data[3]}/>
-        </div>
-       )
-    }
+const App = () => {
+  return (
+   <Container>
+      {/* <Header>Heading one</Header>
+      <Footer>We are here</Footer> */}
+      <ComponentA />
+   </Container>
+  );
 }
 
+export default App;
