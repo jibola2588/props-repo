@@ -30,7 +30,6 @@ export default class Counter extends Component{
          <>
            <p>component A</p>
               <p>count -- {this.state.count} </p>
-
          </>
         )
     }
