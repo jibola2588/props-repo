@@ -5,7 +5,7 @@ export default class ConditionalRendering extends Component {
   render() { 
    
     console.log(this.props); 
-    const {name,age,gender,isFav,hobby} = this.props 
+    const {name,email,address,username} = this.props 
    
 
 
@@ -20,12 +20,13 @@ export default class ConditionalRendering extends Component {
        {
           name ? <p>name : {name}</p> : null   
        }
-       {age &&
-         <p>age : {age}</p> }
-       {gender && <p>gender:{gender} </p>}
-       {isFav &&  <p>isFav : {isFav}</p>}
-       {hobby &&  <p>hobby : {hobby} </p>}
-     
+       {
+          email ? <p>email : {email}</p> : null   
+       }
+       {username &&
+         <p>username: {username}</p> }
+       {address.city && <p>city:{address.city} </p>}
+       {address.street &&  <p>street : {address.street}</p>}   
       </div>
     );
   }
