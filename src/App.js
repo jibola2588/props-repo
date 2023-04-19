@@ -7,6 +7,7 @@ import Counter from './functionalComponents/12-04-23'
 import Form from './functionalComponents/14-04-23'
 import UnControlledForm from './functionalComponents/unControlledForm'
 import ParentComponent from './classes/ParentComponent'
+import ComponentA from './functionalComponents/componentA';
 
 const App = () => {
   // const [showComp,setShowComp] = useState(true)
@@ -21,7 +22,8 @@ const App = () => {
         {/* <ParentComponent/> */}
         {/* <Counter />  */}
         {/* <Form />  */}
-        <UnControlledForm /> 
+        {/* <UnControlledForm />  */}
+        <ComponentA />
    </Container>
   );
 }
