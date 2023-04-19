@@ -7,6 +7,7 @@ import Counter from './functionalComponents/12-04-23'
 import Form from './functionalComponents/14-04-23'
 import UnControlledForm from './functionalComponents/unControlledForm'
 import ParentComponent from './classes/ParentComponent'
+import ComponentA from './functionalComponents/componentA';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -28,14 +29,14 @@ const App = () => {
         {/* <Counter />  */}
         {/* <Form />  */}
         {/* <UnControlledForm />  */}
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={  <Contact />} />
-        </Routes>
-   </Container>
-  );
-}
 
+        <ComponentA />
+        {/* <Navbar />
+           <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={  <Contact />} />
+        </Routes> */}
+      
+   </Container>
+}
 export default App;
