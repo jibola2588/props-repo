@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 
 import {Routes,Route} from 'react-router-dom'
 import Navbar from './functionalComponents/Navbar';
+import ConsumeApi from './functionalComponents/consumeApi';
 
 const App = () => {
   // const [showComp,setShowComp] = useState(true)
@@ -30,13 +31,14 @@ const App = () => {
         {/* <Form />  */}
         {/* <UnControlledForm />  */}
 
-        <ComponentA />
+        {/* <ComponentA /> */}
         {/* <Navbar />
            <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={  <Contact />} />
         </Routes> */}
-      
+      <ConsumeApi />
    </Container>
+  )
 }
 export default App;
