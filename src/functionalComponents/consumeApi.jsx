@@ -11,23 +11,16 @@ const ConsumeApi = () => {
     React.useEffect(() => { 
  
         const getPosts = async () => { 
-        try{ 
-            const res = await fetch(url)
+            const res = await fetch(url);
             const data =  await res.json();
             setposts(data?.splice(0,10));
-        
-        }catch(err){ 
-            console.log(err.message)
-            setError(err.message)
-        }
-
     }
            getPosts()
 
     },[])
 
   return ( 
-      <div className='flex items-center flex-wrap justify-evenly h-screen'>
+      <div className='flex items-center flex-wrap justify-between h-screen'>
         { posts.length === 0 ?
          <p className='text-xl text-center mt-4'>loading ... </p> 
          : posts.length ? 
